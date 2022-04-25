@@ -17,6 +17,6 @@ services:
       - key: SECRET_KEY_BASE
         generateValue: true
       - key: ADMIN_EMAIL
-        value: 'spree@example.com'
+        value: 'asrivastava636@gmail.com'
       - key: ADMIN_PASSWORD
-        value: 'spree123'
+        value: 'detox@2022'
