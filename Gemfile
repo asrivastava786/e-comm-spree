@@ -102,3 +102,12 @@ gem 'oj'
 
 # Fix SCSS errors with Ruby 3 on MacOS
 gem 'sassc', github: 'sass/sassc-ruby', group: :development
+
+#google Analytics
+gem 'spree_analytics_trackers', github: 'spree-contrib/spree_analytics_trackers'
+
+#social media login
+gem 'spree_social', github: 'spree-contrib/spree_social'
+
+#razorpay integration
+gem 'spree_razorpay'
