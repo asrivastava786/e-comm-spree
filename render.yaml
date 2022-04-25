@@ -1,18 +1,18 @@
 databases:
-  - name: spree
+  - name: detox
     databaseName: spree
-    user: spree
+    user: akash
 
 services:
   - type: web
-    name: spree
+    name: corespree
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: spree
+          name: detox
           property: connectionString
       - key: SECRET_KEY_BASE
         generateValue: true
