@@ -1,7 +1,7 @@
-databases:
-  - name: detox
-    databaseName: spree
-    user: akash
+#databases:
+# # - name: detox
+  #  databaseName: spree
+  #  user: akash
 
 services:
   - type: web
@@ -10,13 +10,13 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: detox
-          property: connectionString
+     # - key: DATABASE_URL
+     #   fromDatabase:
+     #     name: detox
+      #    property: connectionString
       - key: SECRET_KEY_BASE
         generateValue: true
-      - key: ADMIN_EMAIL
-        value: 'asrivastava636@gmail.com'
-      - key: ADMIN_PASSWORD
-        value: 'detox@2022'
+    #  - key: ADMIN_EMAIL
+     #   value: 'asrivastava636@gmail.com'
+     # - key: ADMIN_PASSWORD
+     #   value: ''
