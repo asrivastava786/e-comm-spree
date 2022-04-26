@@ -14,8 +14,8 @@ services:
      #   fromDatabase:
      #     name: detox
       #    property: connectionString
-      - key: SECRET_KEY_BASE
-        generateValue: true
+      #- key: SECRET_KEY_BASE
+       # generateValue: true
     #  - key: ADMIN_EMAIL
      #   value: 'asrivastava636@gmail.com'
      # - key: ADMIN_PASSWORD
