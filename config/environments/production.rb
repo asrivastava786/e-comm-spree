@@ -82,6 +82,26 @@ Rails.application.configure do
       verbose: false
     }
   end
+  
+  #redis
+    if ENV['REDIS_URL'].present?
+      config.cache_store = :redis_cache_store, { url: ENV['REDIS_URL'] }
+      
+      cache_servers = %w(redis://cache-01:6379/0 redis://cache-02:6379/0)
+      config.cache_store = :redis_cache_store, { url: cache_servers,
+
+      connect_timeout:    30,  # Defaults to 20 seconds
+      read_timeout:       0.2, # Defaults to 1 second
+      write_timeout:      0.2, # Defaults to 1 second
+      reconnect_attempts: 1,   # Defaults to 0
+
+      error_handler: -> (method:, returning:, exception:) {
+        # Report errors to Sentry as warnings
+        Raven.capture_exception exception, level: 'warning',
+          tags: { method: method, returning: returning }
+    }
+  }
+  end
 
   heroku_app_url = ENV['HEROKU_APP_NAME'].present? ? "#{ENV['HEROKU_APP_NAME']}.herokuapp.com" : nil
   app_host = ENV.fetch('APP_DOMAIN', heroku_app_url)
