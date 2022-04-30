@@ -111,3 +111,11 @@ gem 'sassc', github: 'sass/sassc-ruby', group: :development
 
 #razorpay integration
 #gem 'spree_razorpay'
+
+#reaffiliate program
+gem 'spree_reffiliate', github: 'vinsol-spree-contrib/spree_reffiliate'
+
+#redis
+gem 'redis'
+gem 'hiredis'
+
