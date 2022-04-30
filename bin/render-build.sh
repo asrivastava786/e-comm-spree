@@ -2,6 +2,10 @@
 # exit on error
 set -o errexit
 
+bundle
+bundle exec rails g spree_reffiliate:install
+
+
 bundle install
 bundle exec rails assets:precompile
 bundle exec rails assets:clean
