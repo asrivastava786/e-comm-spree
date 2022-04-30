@@ -104,13 +104,13 @@ gem 'oj'
 gem 'sassc', github: 'sass/sassc-ruby', group: :development
 
 #google Analytics
-#gem 'spree_analytics_trackers', github: 'spree-contrib/spree_analytics_trackers'
+gem 'spree_analytics_trackers', github: 'spree-contrib/spree_analytics_trackers'
 
 #social media login
-#gem 'spree_social', github: 'spree-contrib/spree_social'
+gem 'spree_social', github: 'spree-contrib/spree_social'
 
 #razorpay integration
-#gem 'spree_razorpay'
+gem 'spree_razorpay'
 
 #reaffiliate program
 gem 'spree_reffiliate', github: 'vinsol-spree-contrib/spree_reffiliate'
