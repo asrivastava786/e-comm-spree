@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.0.3'
+ruby '3.0.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.4'
@@ -104,18 +104,19 @@ gem 'oj'
 gem 'sassc', github: 'sass/sassc-ruby', group: :development
 
 #google Analytics
-#gem 'spree_analytics_trackers', github: 'spree-contrib/spree_analytics_trackers'
+gem 'spree_analytics_trackers', '~> 2.0'
 
 #social media login
 #gem 'spree_social', github: 'spree-contrib/spree_social'
 
 #razorpay integration
-#gem 'spree_razorpay'
+gem 'spree_razorpay'
 
 #reaffiliate program
-#gem 'spree_reffiliate', github: 'vinsol-spree-contrib/spree_reffiliate'
+gem 'spree_reffiliate', github: 'asrivastava786/spree_reffiliate'
 
 #redis
-#gem 'redis'
-#gem 'hiredis'
+gem 'redis'
+gem 'redis-namespace'
+gem 'redis-rails'
 
