@@ -725,7 +725,7 @@ DEPENDENCIES
   spree_emails (>= 4.4.0)
   spree_gateway
   spree_i18n (>= 5.0)
-  spree_razorpay
+  spree_razorpay (~> 0.2.3)
   spree_sample (>= 4.4.0)
   spring
   stackprof
