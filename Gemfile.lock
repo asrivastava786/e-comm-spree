@@ -619,6 +619,9 @@ GEM
       rails-i18n
       spree_core (>= 4.2.0.rc3, < 5.0)
       spree_extension
+    spree_razorpay (0.2.3)
+      razorpay
+      spree_core
     spree_sample (4.4.0)
       ffaker (~> 2.9)
       spree_core (>= 4.4.0)
@@ -706,7 +709,6 @@ DEPENDENCIES
   rack-mini-profiler
   rack-timeout
   rails (~> 6.1.4)
-  razorpay
   remote_syslog_logger
   rspec_junit_formatter
   sass-rails
@@ -723,6 +725,7 @@ DEPENDENCIES
   spree_emails (>= 4.4.0)
   spree_gateway
   spree_i18n (>= 5.0)
+  spree_razorpay
   spree_sample (>= 4.4.0)
   spring
   stackprof
