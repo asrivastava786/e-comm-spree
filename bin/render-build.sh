@@ -9,6 +9,8 @@ bundle exec rails assets:clean
 
 bundle exec rails g spree_analytics_trackers:install
 
+rails g spree_razorpay:install
+
 #bundle exec rails db:migrate
 #bundle exec rails db:seed
 #bundle exec rake spree_sample:load
