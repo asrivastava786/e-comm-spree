@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-bundle exec rails g spree_analytics_trackers:install
+#bundle exec rails g spree_analytics_trackers:install
 bundle install
 #
 bundle exec rails assets:precompile
