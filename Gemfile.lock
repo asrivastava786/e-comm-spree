@@ -255,6 +255,9 @@ GEM
       rails (>= 6.0.0)
       stimulus-rails
       turbo-rails
+    httparty (0.20.0)
+      mime-types (~> 3.0)
+      multi_xml (>= 0.5.2)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     i18n_data (0.15.0)
@@ -310,6 +313,9 @@ GEM
     matrix (0.4.2)
     memory_profiler (1.0.0)
     method_source (1.0.0)
+    mime-types (3.4.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2022.0105)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
@@ -320,6 +326,7 @@ GEM
       i18n (>= 0.6.4, <= 2)
     msgpack (1.4.4)
     multi_json (1.15.0)
+    multi_xml (0.6.0)
     multipart-post (2.1.1)
     nio4r (2.5.8)
     nokogiri (1.13.3)
@@ -403,6 +410,8 @@ GEM
       activerecord (>= 5.2.4)
       activesupport (>= 5.2.4)
       i18n
+    razorpay (2.4.1)
+      httparty (~> 0.14)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -610,6 +619,9 @@ GEM
       rails-i18n
       spree_core (>= 4.2.0.rc3, < 5.0)
       spree_extension
+    spree_razorpay (0.2.3)
+      razorpay
+      spree_core
     spree_sample (4.4.0)
       ffaker (~> 2.9)
       spree_core (>= 4.4.0)
@@ -713,6 +725,7 @@ DEPENDENCIES
   spree_emails (>= 4.4.0)
   spree_gateway
   spree_i18n (>= 5.0)
+  spree_razorpay
   spree_sample (>= 4.4.0)
   spring
   stackprof
