@@ -110,7 +110,7 @@ gem 'spree_analytics_trackers', '~> 2.0'
 #gem 'spree_social', github: 'spree-contrib/spree_social'
 
 #razorpay integration
-gem 'spree_razorpay'
+gem 'razorpay'
 
 #reaffiliate program
 #gem 'spree_reffiliate', github: 'vinsol-spree-contrib/spree_reffiliate'
